@@ -1,11 +1,11 @@
-import UseReducer from "./Hooks/UseReducer";
-import UseState from "./Hooks/UseState";
+// import UseReducer from "./Hooks/UseReducer";
+import UseReducer2 from "./Hooks/UseReducer2";
+// import UseState from "./Hooks/UseState";
 
 function App() {
   return (
     <>
-      <UseState />
-      <UseReducer />
+      <UseReducer2 />
     </>
   );
 }
