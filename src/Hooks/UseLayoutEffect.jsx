@@ -4,7 +4,7 @@ import { useState } from "react";
 function UseLayoutEffect() {
   const [count, setCount] = useState(0);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     console.log("console 1");
   }, []);
   useLayoutEffect(() => {
