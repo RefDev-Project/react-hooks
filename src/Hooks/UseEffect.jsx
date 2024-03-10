@@ -34,3 +34,8 @@ function UseEffect() {
 }
 
 export default UseEffect;
+
+// useEffect : useEffect adalah fungsi yang digunakan untuk menjalankan efek pada komponen React. Fungsi ini
+// digunakan untuk mengeksekusi efek pada komponen React. Perbedaan antara useEffect dan useLayoutEffect
+// adalah useEffect digunakan untuk mengeksekusi efek pada komponen React, sedangkan useLayoutEffect
+// digunakan untuk mengeksekusi efek layout pada komponen React.

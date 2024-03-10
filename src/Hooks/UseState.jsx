@@ -28,3 +28,6 @@ function UseState() {
 }
 
 export default UseState;
+
+// useState : useState adalah fungsi yang digunakan untuk membuat state dalam aplikasi React.
+// Fungsi ini digunakan untuk membuat variabel yang dapat diubah secara dinamis.
