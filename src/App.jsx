@@ -1,15 +1,12 @@
-import UseEffect from "./Hooks/UseEffect";
-import UseLayoutEffect from "./Hooks/UseLayoutEffect";
-import UseReducer2 from "./Hooks/UseReducer2";
-import UseState from "./Hooks/UseState";
+import ComponentHooks from "./ComponentHooks";
+import ComponentDarkMode from "./Hooks/UseContext";
 
 function App() {
   return (
     <>
-      <UseState />
-      <UseReducer2 />
-      <UseEffect />
-      <UseLayoutEffect />
+      <ComponentDarkMode>
+        <ComponentHooks />
+      </ComponentDarkMode>
     </>
   );
 }

@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { DarkMode } from "./UseContext";
 
 function UseState() {
   const [count, setCount] = useState(0);
+  const { isDarkMode } = useContext(DarkMode);
 
   function handleIncrement() {
     setCount((count) => count + 1);
@@ -11,7 +13,7 @@ function UseState() {
     setCount((count) => count - 1);
   }
   return (
-    <div className="flex gap-4 m-10">
+    <div className={`flex gap-4 m-10 ${isDarkMode ? "text-white" : "text-black"}`}>
       {count < 0 ? (
         ""
       ) : (

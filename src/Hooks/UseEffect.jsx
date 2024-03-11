@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { DarkMode } from "./UseContext";
 
 function UseEffect() {
   const [products, setProducts] = useState([]);
+  const { isDarkMode } = useContext(DarkMode);
 
   useEffect(() => {
     getProduct();
@@ -23,8 +25,8 @@ function UseEffect() {
         return (
           <table key={product.id}>
             <thead>
-              <th>Nama : </th>
-              <td>{product.title}</td>
+              <th className={`text-${isDarkMode ? "white" : "black"}`}>Nama : </th>
+              <td className={`text-${isDarkMode ? "white" : "black"}`}>{product.title}</td>
             </thead>
           </table>
         );

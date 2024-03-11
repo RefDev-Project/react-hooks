@@ -1,8 +1,10 @@
-import { useEffect, useLayoutEffect } from "react";
+import { useContext, useEffect, useLayoutEffect } from "react";
 import { useState } from "react";
+import { DarkMode } from "./UseContext";
 
 function UseLayoutEffect() {
   const [count, setCount] = useState(0);
+  const { isDarkMode } = useContext(DarkMode);
 
   useEffect(() => {
     console.log("console 1");
@@ -17,7 +19,9 @@ function UseLayoutEffect() {
   return (
     <>
       {console.log("console 3")}
-      <button onClick={handleIncrement}>+</button>
+      <button onClick={handleIncrement} className={`${isDarkMode ? "text-white" : "text-black"}`}>
+        +
+      </button>
       <h1>{count}</h1>
     </>
   );
