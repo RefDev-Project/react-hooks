@@ -4,6 +4,7 @@ import UseLayoutEffect from "./Hooks/UseLayoutEffect";
 import UseReducer2 from "./Hooks/UseReducer2";
 import UseState from "./Hooks/UseState";
 import { DarkMode } from "./Hooks/UseContext";
+import UseContext2 from "./Hooks/UseContext2";
 
 function ComponentHooks() {
   const { isDarkMode, setIsDarkMode } = useContext(DarkMode);
@@ -16,6 +17,7 @@ function ComponentHooks() {
       <button className="hover:bg-blue-700 bg-blue-500 px-4 rounded-md text-white font-semibold mt-5" onClick={handleMode}>
         {isDarkMode ? "☀️" : "🌙"}
       </button>
+      <UseContext2 />
       <UseState />
       <UseReducer2 />
       <UseEffect />

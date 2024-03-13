@@ -3,7 +3,7 @@ import { DarkMode } from "./UseContext";
 
 function UseState() {
   const [count, setCount] = useState(0);
-  const { isDarkMode } = useContext(DarkMode);
+  const isDarkMode = useContext(DarkMode);
 
   function handleIncrement() {
     setCount((count) => count + 1);

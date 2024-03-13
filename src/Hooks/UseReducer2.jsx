@@ -17,7 +17,7 @@ function reducer(state, action) {
 
 function UseReducer2() {
   const [state, dispatch] = useReducer(reducer, { count: 0 });
-  const { isDarkMode } = useContext(DarkMode);
+  const isDarkMode = useContext(DarkMode);
 
   function handleIncrement() {
     dispatch({ type: "increment" });
