@@ -11,3 +11,7 @@ function ComponentDarkMode({ children }) {
 
 export { DarkMode };
 export default ComponentDarkMode;
+
+// UseContext adalah fungsi yang digunakan untuk membuat state dalam aplikasi React.
+// Fungsi ini digunakan untuk membuat variabel yang dapat diubah secara dinamis. kemudian menggunakan useContext untuk mengakses variabel tersebut.
+// useContext juga digunakan untuk mengeksekusi efek pada komponen React.

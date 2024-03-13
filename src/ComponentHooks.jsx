@@ -5,6 +5,7 @@ import UseReducer2 from "./Hooks/UseReducer2";
 import UseState from "./Hooks/UseState";
 import { DarkMode } from "./Hooks/UseContext";
 import UseContext2 from "./Hooks/UseContext2";
+import UseRef from "./Hooks/UseRef";
 
 function ComponentHooks() {
   const { isDarkMode, setIsDarkMode } = useContext(DarkMode);
@@ -22,6 +23,7 @@ function ComponentHooks() {
       <UseReducer2 />
       <UseEffect />
       <UseLayoutEffect />
+      <UseRef />
     </div>
   );
 }

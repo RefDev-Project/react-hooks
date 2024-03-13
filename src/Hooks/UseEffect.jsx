@@ -25,8 +25,10 @@ function UseEffect() {
         return (
           <table key={product.id}>
             <thead>
-              <th className={`text-${isDarkMode ? "white" : "black"}`}>Nama : </th>
-              <td className={`text-${isDarkMode ? "white" : "black"}`}>{product.title}</td>
+              <tr>
+                <th className={`text-${isDarkMode ? "white" : "black"}`}>Nama : </th>
+                <td className={`text-${isDarkMode ? "white" : "black"}`}>{product.title}</td>
+              </tr>
             </thead>
           </table>
         );
@@ -36,8 +38,6 @@ function UseEffect() {
 }
 
 export default UseEffect;
+// useEffect adalah salah satu dari beberapa hooks yang disediakan oleh React untuk mengelola efek samping dalam functional components. Efek samping bisa berupa melakukan permintaan HTTP, berlangganan ke sumber data eksternal, menetapkan event listener, dan lain sebagainya.
 
-// useEffect : useEffect adalah fungsi yang digunakan untuk menjalankan efek pada komponen React. Fungsi ini
-// digunakan untuk mengeksekusi efek pada komponen React. Perbedaan antara useEffect dan useLayoutEffect
-// adalah useEffect digunakan untuk mengeksekusi efek pada komponen React, sedangkan useLayoutEffect
-// digunakan untuk mengeksekusi efek layout pada komponen React.
+// useEffect memungkinkan Anda menjalankan kode efek samping setiap kali terjadi perubahan pada komponen, seperti setelah render pertama, setiap kali perubahan pada state atau props terjadi, atau bahkan ketika komponen dihapus dari DOM.

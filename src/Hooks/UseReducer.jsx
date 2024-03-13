@@ -44,7 +44,6 @@ function UseReducer() {
 
 export default UseReducer;
 
-// useReducer : useReducer adalah fungsi yang digunakan untuk membuat state dalam aplikasi React.
-// Fungsi ini digunakan untuk membuat variabel yang dapat diubah secara dinamis. hampir sama dengan useState,
-// perbedaanya adalah state yang ditampung di reducer menggunakan fungsi reducer yang dibuat sendiri
-// seperti diatas yang dibuat sendiri di reducer.
+// useReducer adalah hook lain yang disediakan oleh React untuk mengelola state dalam functional components. Ini biasanya digunakan untuk kasus di mana state memiliki logika kompleks atau ketika beberapa nilai state saling terkait. useReducer mirip dengan useState, tetapi menggunakan pendekatan yang lebih fleksibel dengan menggunakan sebuah reducer.
+
+// Reducer adalah sebuah fungsi yang mengambil dua argumen, yaitu state saat ini dan aksi yang ingin dilakukan pada state tersebut, dan mengembalikan state yang baru. Aksi ini biasanya berupa objek yang memiliki sebuah properti type yang mendefinisikan tipe aksi yang dilakukan dan properti lain yang berisi data tambahan yang diperlukan untuk melakukan aksi tersebut.

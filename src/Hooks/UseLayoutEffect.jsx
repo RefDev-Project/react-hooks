@@ -29,8 +29,6 @@ function UseLayoutEffect() {
 
 export default UseLayoutEffect;
 
-// useLayoutEffect : useLayoutEffect adalah fungsi yang digunakan untuk menjalankan efek layout pada komponen React.
-// Fungsi ini digunakan untuk menjalankan efek layout pada komponen React. Efek layout ini biasanya digunakan
-// untuk mengatur tata letak elemen HTML pada aplikasi React. perbedaan antara useLayoutEffect dan useEffect
-// adalah useLayoutEffect digunakan untuk mengeksekusi efek layout pada komponen React, sedangkan useEffect
-// digunakan untuk mengeksekusi efek pada komponen React.
+// useLayoutEffect adalah hook lain yang disediakan oleh React yang mirip dengan useEffect, tetapi dieksekusi secara sinkron setelah semua DOM mutasi. Ini berbeda dari useEffect, yang dieksekusi secara asynchronous setelah render selesai.
+
+// Penggunaan umum dari useLayoutEffect adalah ketika Anda perlu melakukan sesuatu yang membutuhkan ukuran atau posisi aktual dari elemen DOM atau Anda ingin memastikan bahwa efek samping Anda diaplikasikan sebelum pengguna melihat perubahan layar.

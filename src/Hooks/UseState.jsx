@@ -31,5 +31,6 @@ function UseState() {
 
 export default UseState;
 
-// useState : useState adalah fungsi yang digunakan untuk membuat state dalam aplikasi React.
-// Fungsi ini digunakan untuk membuat variabel yang dapat diubah secara dinamis.
+// useState adalah salah satu hook yang disediakan oleh React untuk mengelola state dalam functional components. Ini memungkinkan Anda menyimpan state lokal dalam komponen Anda dan memicu re-rendering ketika nilai state tersebut berubah.
+
+// Fungsi useState mengembalikan array dengan dua elemen. Elemen pertama adalah nilai state saat ini, dan elemen kedua adalah fungsi untuk memperbarui nilai state tersebut.
