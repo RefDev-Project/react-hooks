@@ -6,6 +6,7 @@ import UseState from "./Hooks/UseState";
 import { DarkMode } from "./Hooks/UseContext";
 import UseContext2 from "./Hooks/UseContext2";
 import UseRef from "./Hooks/UseRef";
+import ParentComponent from "./Hooks/UseImperativeHandle";
 
 function ComponentHooks() {
   const { isDarkMode, setIsDarkMode } = useContext(DarkMode);
@@ -24,6 +25,7 @@ function ComponentHooks() {
       <UseEffect />
       <UseLayoutEffect />
       <UseRef />
+      <ParentComponent />
     </div>
   );
 }
