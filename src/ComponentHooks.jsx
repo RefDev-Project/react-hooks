@@ -8,6 +8,8 @@ import UseContext2 from "./Hooks/UseContext2";
 import UseRef from "./Hooks/UseRef";
 import ParentComponent from "./Hooks/UseImperativeHandle";
 import UseMemo from "./Hooks/UseMemo";
+import UseCallback from "./Hooks/UseCallback";
+import UseId from "./Hooks/UseId";
 
 function ComponentHooks() {
   const { isDarkMode, setIsDarkMode } = useContext(DarkMode);
@@ -20,7 +22,9 @@ function ComponentHooks() {
       <button className="hover:bg-blue-700 bg-blue-500 px-4 rounded-md text-white font-semibold mt-5" onClick={handleMode}>
         {isDarkMode ? "☀️" : "🌙"}
       </button>
+      <UseId />
       <UseMemo />
+      <UseCallback />
       <UseContext2 />
       <UseState />
       <UseReducer2 />
